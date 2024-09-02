@@ -6,20 +6,20 @@
     <title>Nutrifresh</title>
     <link rel="stylesheet" href="style_vendas.css">
     <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTvtR7Ur-GEWTZ0W1I2YOIjAibbLzgce-f03g&s" type="image/x-icon">
-   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <header>
         <h1>Nutrifresh</h1>
         <nav>
             <ul class="nav-items">
-                <li><a href="#cardapio">Produtos</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
                 <li><a href="#contatos">Contatos</a></li>
             </ul>
-       
         </nav>
         <section class="redes-sociais">
-            <img src="https://cdn-icons-png.flaticon.com/512/1936/1936319.png" alt="instagram-icon">
+            <img src="https://cdn-icons-png.flaticon.com/512/126/126510.png" alt="carrinho-icon">
+            <a href="https://www.instagram.com/nutrifresh/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1936/1936319.png" alt="instagram-icon"></a>
         </section>
     </header>
 
@@ -27,67 +27,105 @@
     <main>
         <section id="cardapio">
             <h2>Cardápio</h2>
-            <div class="cardapio-grid">
-                <div class="item-cardapio">
-                    <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/bd116729-6fbb-48aa-a169-755b82e3c42e/201805031256_44272450.jpg" alt="Produto A">
-                    <p>Produto A</p>
-                    <p>Preço</p>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/bd116729-6fbb-48aa-a169-755b82e3c42e/201805031256_44272450.jpg" class="card-img-top" alt="Produto A">
+                        <div class="card-body">
+                            <h5 class="card-title">Risoto de arroz negro com cubos de frango</h5>
+                            <p class="card-text">R$36,00</p>
+                            <p>Com mix de legumes assados. Com lactose.</p>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
                 </div>
-
-
-                <div class="item-cardapio">
-                    <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/8c67a014-1c1e-4d93-94de-0baa42bcec29/201712261752_37347364.bmp" alt="Produto B">
-                    <p>Produto B</p>
-                    <p>Preço</p>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/8c67a014-1c1e-4d93-94de-0baa42bcec29/201712261752_37347364.bmp" class="card-img-top" alt="Produto B">
+                        <div class="card-body">
+                            <h5 class="card-title">Filé de frango à pizzaiolo</h5>
+                            <p class="card-text">R$36,00</p>
+                            <p>Marmita acompanha Arroz integral com mix de sementes e misto de legumes.</p>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
                 </div>
-
-
-                <div class="item-cardapio">
-                    <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/bd116729-6fbb-48aa-a169-755b82e3c42e/201808281656_carne.jpg" alt="Produto C">
-                    <p>Produto C</p>
-                    <p>Preço</p>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/bd116729-6fbb-48aa-a169-755b82e3c42e/201808281656_carne.jpg" class="card-img-top" alt="Produto C">
+                        <div class="card-body">
+                            <h5 class="card-title">Carne de Panela (Louca) Desfiada</h5>
+                            <p class="card-text">R$36,00</p>
+                            <p>Carne de panela (Louca) desfiada com purê de batata doce</p>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
                 </div>
-
-
-                <div class="item-cardapio">
-                    <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/bd116729-6fbb-48aa-a169-755b82e3c42e/201808202224_estro.jpg" alt="Produto D">
-                    <p>Produto D</p>
-                    <p>Preço</p>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/bd116729-6fbb-48aa-a169-755b82e3c42e/201808202224_estro.jpg" class="card-img-top" alt="Produto D">
+                        <div class="card-body">
+                            <h5 class="card-title">Estrogonofe de frango</h5>
+                            <p class="card-text">R$36,00</p>
+                            <p>Estrogonofe de frango com arroz integral com gergelim e batata inglesa rústica</p>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
                 </div>
-
-
-                <div class="item-cardapio">
-                    <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/bd116729-6fbb-48aa-a169-755b82e3c42e/201809141826_bobo.jpg" alt="Produto E">
-                    <p>Produto E</p>
-                    <p>Preço</p>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/bd116729-6fbb-48aa-a169-755b82e3c42e/201809141826_bobo.jpg" class="card-img-top" alt="Produto E">
+                        <div class="card-body">
+                            <h5 class="card-title">Bobó de camarão</h5>
+                            <p class="card-text">R$36,00</p>
+                            <p>Bobó de camarão com arroz branco.</p>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
                 </div>
-
-
-                <div class="item-cardapio">
-                    <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/bd116729-6fbb-48aa-a169-755b82e3c42e/201809141807_mosta.jpg" alt="Produto F">
-                    <p>Produto F</p>
-                    <p>Preço</p>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://static.ifood-static.com.br/image/upload/t_medium/pratos/bd116729-6fbb-48aa-a169-755b82e3c42e/201809141807_mosta.jpg" class="card-img-top" alt="Produto F">
+                        <div class="card-body">
+                            <h5 class="card-title">Picadinho de carne ao molho de mostarda e alcaparras</h5>
+                            <p class="card-text">R$36,00</p>
+                            <p>Arroz beterraba e couve refogada.</p>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
                 </div>
-
-
-                <div class="item-cardapio">
-                    <img src="https://www.goomer.app/webmenu/nutrifresh/product/10817865/picture/large/240516140614" alt="Produto G">
-                    <p>Produto G</p>
-                    <p>Preço</p>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://www.goomer.app/webmenu/nutrifresh/product/10817876/picture/large/240516140615" class="card-img-top" alt="Produto G">
+                        <div class="card-body">
+                            <h5 class="card-title">Kafta ao Molho de Ervas</h5>
+                            <p class="card-text">R$36,00</p>
+                            <p>Com arroz integral e lentilha.</p>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
                 </div>
-
-
-                <div class="item-cardapio">
-                    <img src="https://www.goomer.app/webmenu/nutrifresh/product/10817868/picture/large/240516140614" alt="Produto H">
-                    <p>Produto H</p>
-                    <p>Preço</p>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://www.goomer.app/webmenu/nutrifresh/product/10817868/picture/large/240516140614" class="card-img-top" alt="Produto H">
+                        <div class="card-body">
+                            <h5 class="card-title">Peixe ao molho de ervas</h5>
+                            <p class="card-text">R$36,00</p>
+                            <p>Arroz açafrão e brócolis com cenoura.</p>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
                 </div>
-
-
-                <div class="item-cardapio">
-                    <img src="https://www.goomer.app/webmenu/nutrifresh/product/10817872/picture/large/240516140614" alt="Produto I">
-                    <p>Produto I</p>
-                    <p>Preço</p>
+                <div class="col">
+                    <div class="card h-100">
+                        <img src="https://www.goomer.app/webmenu/nutrifresh/product/10817872/picture/large/240516140614" class="card-img-top" alt="Produto I">
+                        <div class="card-body">
+                            <h5 class="card-title">Frango ao mediterrâneo</h5>
+                            <p class="card-text">R$36,00</p>
+                            <p>Frango desfiado com molho mediterrâneo e batata doce assada.</p>
+                            <button class="btn btn-primary">Comprar</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -97,14 +135,25 @@
     <footer>
         <section id="contatos">
             <h2>Contatos</h2>
-            <ul>
-                <li>Telefone</li>
-                <li>Email</li>
-                <li>Endereço</li>
-                <li>Alguma outra coisa</li>
-            </ul>
+            <div class="contatos-mapa">
+                <div class="contato-info">
+                    <ul>
+                        <li>Telefone: (61)99423-5965</li>
+                        <li>Endereço: Loja 32, CLS 105 BL B - Brasília, DF, 70714-900</li>
+                        <li>Horário de Funcionamento:
+                            seg a sex de 09:00 às 20:00
+                            e sáb de 09:00 às 19:00
+                        </li>
+                    </ul>
+                </div>
+                <div class="mapa">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d122843.53291010756!2d-48.0418118!3d-15.8113131!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3ac6036612f3%3A0xae0149866ae67688!2sNutrifresh%20-%20Alimenta%C3%A7%C3%A3o%20Inteligente!5e0!3m2!1spt-BR!2sbr!4v1725204413161!5m2!1spt-BR!2sbr" width="500" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
         </section>
     </footer>
-   
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
