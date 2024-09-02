@@ -34,6 +34,7 @@ nav ul {
 
 nav ul li {
     display: inline;
+    font-size: 20px;
 }
 
 main {
@@ -87,7 +88,7 @@ button.btn:hover {
 }
 
 .redes-sociais img {
-    width: 27px;  
+    width: 27px;
     height: 27px;
     border-radius: 50%;
     filter: invert(100%);
@@ -147,4 +148,33 @@ h2 {
     height: 200px;
     border: none;
     border-radius: 10px;
+}
+
+/* Responsividade */
+@media only screen and (max-width: 1085px){
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        margin-left: 40px;
+        margin-right: 10px;
+        display: flex;
+        gap: 8px;
+    } 
+
+    nav ul li {
+        display: inline;
+        font-size: 17px;
+    }
+
+}
+
+@media screen and (max-width: 1085) and (min-width:600){
+    .card {
+        max-width: 200px;
+        margin: 0px auto;
+        border-radius: 10px;
+        box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+    }
 }
