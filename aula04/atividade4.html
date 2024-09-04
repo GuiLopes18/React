@@ -9,21 +9,32 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1>Nutrifresh</h1>
-        <nav>
-            <ul class="nav-items">
-                <li><a href="#cardapio">Cardápio</a></li>
-                <li><a href="#contatos">Contatos</a></li>
-            </ul>
-        </nav>
-        <section class="redes-sociais">
-            <img src="https://cdn-icons-png.flaticon.com/512/126/126510.png" alt="carrinho-icon">
-            <a href="https://www.instagram.com/nutrifresh/" target="_blank"><img src="https://cdn-icons-png.flaticon.com/512/1936/1936319.png" alt="instagram-icon"></a>
-        </section>
+    <header class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <h1 class="navbar-brand">Nutrifresh</h1>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#cardapio">Cardápio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contatos">Contatos</a>
+                    </li>
+                </ul>
+                <div class="nav-icons">
+                    <a href="https://www.instagram.com/nutrifresh/" target="_blank" class="nav-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1936/1936319.png" alt="instagram-icon" class="img-fluid" style="width: 27px; height: 27px;">
+                    </a>
+                    <a href="#" class="nav-link">
+                        <img src="https://cdn-icons-png.flaticon.com/512/126/126510.png" alt="carrinho-icon" class="img-fluid" style="width: 27px; height: 27px;">
+                    </a>
+                </div>
+            </div>
+        </div>
     </header>
-
-
     <main>
         <section id="cardapio">
             <h2>Cardápio</h2>
@@ -34,7 +45,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Risoto de arroz negro com cubos de frango</h5>
                             <p class="card-text">R$36,00</p>
-                            <p>Com mix de legumes assados. Com lactose.</p>
+                            <p class="description">Com mix de legumes assados. Com lactose.</p>
                             <button class="btn btn-primary">Comprar</button>
                         </div>
                     </div>
@@ -45,7 +56,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Filé de frango à pizzaiolo</h5>
                             <p class="card-text">R$36,00</p>
-                            <p>Marmita acompanha Arroz integral com mix de sementes e misto de legumes.</p>
+                            <p class="description">Marmita acompanha Arroz integral com mix de sementes e misto de legumes.</p>
                             <button class="btn btn-primary">Comprar</button>
                         </div>
                     </div>
@@ -56,7 +67,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Carne de Panela (Louca) Desfiada</h5>
                             <p class="card-text">R$36,00</p>
-                            <p>Carne de panela (Louca) desfiada com purê de batata doce</p>
+                            <p class="description">Carne de panela (Louca) desfiada com purê de batata doce</p>
                             <button class="btn btn-primary">Comprar</button>
                         </div>
                     </div>
@@ -67,7 +78,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Estrogonofe de frango</h5>
                             <p class="card-text">R$36,00</p>
-                            <p>Estrogonofe de frango com arroz integral com gergelim e batata inglesa rústica</p>
+                            <p class="description">Estrogonofe de frango com arroz integral com gergelim e batata inglesa rústica</p>
                             <button class="btn btn-primary">Comprar</button>
                         </div>
                     </div>
@@ -78,7 +89,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Bobó de camarão</h5>
                             <p class="card-text">R$36,00</p>
-                            <p>Bobó de camarão com arroz branco.</p>
+                            <p class="description">Bobó de camarão com arroz branco.</p>
                             <button class="btn btn-primary">Comprar</button>
                         </div>
                     </div>
@@ -89,7 +100,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Picadinho de carne ao molho de mostarda e alcaparras</h5>
                             <p class="card-text">R$36,00</p>
-                            <p>Arroz beterraba e couve refogada.</p>
+                            <p class="description">Arroz beterraba e couve refogada.</p>
                             <button class="btn btn-primary">Comprar</button>
                         </div>
                     </div>
@@ -100,7 +111,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Kafta ao Molho de Ervas</h5>
                             <p class="card-text">R$36,00</p>
-                            <p>Com arroz integral e lentilha.</p>
+                            <p class="description">Com arroz integral e lentilha.</p>
                             <button class="btn btn-primary">Comprar</button>
                         </div>
                     </div>
@@ -111,7 +122,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Peixe ao molho de ervas</h5>
                             <p class="card-text">R$36,00</p>
-                            <p>Arroz açafrão e brócolis com cenoura.</p>
+                            <p class="description">Arroz açafrão e brócolis com cenoura.</p>
                             <button class="btn btn-primary">Comprar</button>
                         </div>
                     </div>
@@ -122,7 +133,7 @@
                         <div class="card-body">
                             <h5 class="card-title">Frango ao mediterrâneo</h5>
                             <p class="card-text">R$36,00</p>
-                            <p>Frango desfiado com molho mediterrâneo e batata doce assada.</p>
+                            <p class="description">Frango desfiado com molho mediterrâneo e batata doce assada.</p>
                             <button class="btn btn-primary">Comprar</button>
                         </div>
                     </div>
@@ -152,7 +163,6 @@
             </div>
         </section>
     </footer>
-
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
