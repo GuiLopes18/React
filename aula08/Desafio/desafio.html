@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio</title>
+    <link rel="stylesheet" href="desafio.css"> 
+</head>
+<body>
+    <h1>Elevador</h1>
+
+    <div class="predio">
+        <div class="andar" style="bottom: 66.66%">3º Andar</div>
+        <div class="andar" style="bottom: 33.33%">2º Andar</div>
+        <div class="andar" style="bottom: 0">1º Andar</div>
+
+        <div id="elevador" class="elevador">Elevador</div>
+    </div>
+
+    <div class="botoes">
+        <button onclick="moverElevador(3)">3º Andar</button>
+        <button onclick="moverElevador(2)">2º Andar</button>
+        <button onclick="moverElevador(1)">1º Andar</button>
+    </div>
+
+    <script src="desafio.js"></script>
+</body>
+</html>
