@@ -4,11 +4,11 @@ const pessoa = {
     idade: 21,
     profissao: "desenvolvedor",
     apresentar: function() {
-        console.log(`Sou ${nome}, tenho ${idade} e sou ${profissao}.`);
+        console.log(`Sou ${this.nome}, tenho ${this.idade} e sou ${this.profissao}.`);
     }
 };
 
-console.log(pessoa);
+pessoa.apresentar();
 */
 
 /* 02 - Manipular Propriedades
@@ -29,40 +29,50 @@ const calculadora = {
     B: 2,
     C: 3,
     soma: function() {
-        resultado = A + B + C;
+        resultado = this.A + this.B + this.C;
         console.log(resultado);
     }
 };
 
-console.log(calculadora);
+calculadora.soma();
 */
 
 /* 04 - Classe Retângulo
-function retangulo (altura, largura) {
-    this.altura = altura,
-    this.largura = largura,
-    calcularArea = function() {
-        return this.altura * this.largura
-    }
+function Retangulo(altura, largura) {
+    this.altura = altura;
+    this.largura = largura;
+    this.calcularArea = function() {
+     const area = this.altura * this.largura;
+      console.log(`Área: ${area}`)
+    };
 }
-console.log(retangulo(10, 2));
+
+const novoRetangulo = new Retangulo(10, 2);
+novoRetangulo.calcularArea();
 */
 
 /* 05 - Classe Conta Bancária
-function contaBancaria (titular, saldo) {
-    this.titular = titular,
-    this.saldo = saldo,
-    depositar = function() {
-        saldo += valor;
+function ContaBancaria(titular, saldo) {
+    this.titular = titular;
+    this.saldo = saldo;
+
+    this.depositar = function(valor) {
+        this.saldo += valor;
     }
-    sacar = function() {
-        if (saldo != 0){
-            saldo -= valor;
+
+    this.sacar = function(valor) {
+        if (this.saldo >= valor) {
+            this.saldo -= valor;
+        } else {
+            console.log("Saldo insuficiente!");
         }
     }
 }
 
-const objeto = new contaBancaria("Guilherme", 1000)
+const objeto = new ContaBancaria("Guilherme", 1000);
+
+objeto.depositar(500);
+objeto.sacar(300);
 
 console.log(objeto);
 */
