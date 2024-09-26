@@ -2,7 +2,7 @@
 let numeros = [2, 3, 6, 9, 5];
 let novaLista = [];
 
-for (let i = 0; i <= numeros.length; i++) {
+for (let i = 0; i < numeros.length; i++) {
     if (numeros[i] % 3 === 0) {
         novaLista.push(numeros[i]);
     }
@@ -42,11 +42,11 @@ console.log(soma);
 
 /* 04 - Função Média Aritmética
 function media(lista) {
-    soma = 0;
-    for (let i = 0; i <= lista.lenght; i++) {
+    let soma = 0;
+    for (let i = 0; i < lista.length; i++) {
         soma += lista[i];
     }
-    console.log(soma/lista.lenght);
+    console.log(soma/lista.length);
 }
 
 const lista = [3, 7, 9];
@@ -65,11 +65,10 @@ const pessoa = {
     }
 }
 
-function apresentar(nome, endereco) {
-    this.nome = nome;
-    this.endereco = this.endereco; 
-    console.log(`Meu nome é ${this.nome} e meu endereço é ${this.endereco}`)
+function apresentar(pessoa) {
+    console.log(`Meu nome é ${pessoa.nome} e meu endereço é ${pessoa.endereco.rua}, Nº ${pessoa.endereco.numero}, ${pessoa.endereco.cidade} - ${pessoa.endereco.estado}`);
 }
 
 apresentar(pessoa);
+
 */
